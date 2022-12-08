@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
-  resources :greetings
+  resources :greetings, only: [ :index ]
   root 'root#index'
 end
