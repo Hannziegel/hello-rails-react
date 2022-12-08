@@ -11,8 +11,8 @@ const Greeting = () => {
   }, []);
 
   return (
-    <div>
-      <h2 className="greeting">{greeting}</h2>
+    <div className="container mx-auto">
+      <h2 className="text-3xl font-bold underline">{greeting}</h2>
     </div>
   )
 };
