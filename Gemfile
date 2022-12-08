@@ -13,6 +13,10 @@ gem "sprockets-rails"
 #gem "sqlite3", "~> 1.4"
 gem 'pg'
 gem 'dotenv-rails'
+
+# Access-Control-Allow-Origin CORS errors
+gem 'rack-cors'
+
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", "~> 5.0"
 
