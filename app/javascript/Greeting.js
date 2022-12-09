@@ -9,10 +9,15 @@ const Greeting = () => {
     if (!greeting.length) dispatch(getGreetings());
     console.log(greeting)
   }, []);
+  function refreshPage() {
+    window.location.reload();
+  }
 
   return (
-    <div className="container mx-auto">
-      <h2 className="text-3xl font-bold underline">{greeting}</h2>
+    <div className="flex items-center justify-center h-screen">
+      <div onClick={refreshPage} className="p-12 max-w-sm mx-auto bg-cyan-700 rounded-xl shadow-lg hover:shadow-2xl hover:shadow-white hover:scale-20 shadow-white flex items-center space-x-4 cursor-pointer">
+        <h2 className="text-xl font-xl text-white">{greeting}</h2>
+      </div>
     </div>
   )
 };
